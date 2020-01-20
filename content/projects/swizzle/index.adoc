@@ -1,3 +1,6 @@
+:jbake-type: project
+:jbake-status: published
+
 = Swizzle Stream
 :showtitle:
 

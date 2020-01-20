@@ -1,3 +1,6 @@
+:jbake-type: project
+:jbake-status: published
+
 https://travis-ci.org/tomitribe/beryllium.svg?branch=master[image:https://travis-ci.org/tomitribe/beryllium.svg?branch=master[Build
 Status]]
 https://coveralls.io/github/tomitribe/beryllium?branch=master[image:https://coveralls.io/repos/tomitribe/beryllium/badge.svg?branch=master&service=github[Coverage
