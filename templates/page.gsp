@@ -1,15 +1,21 @@
-<%include "header.gsp"%>
+<%include "partials/header.gsp"%>
 
-	<%include "menu.gsp"%>
-	
-	<div class="page-header">
-		<h1>${content.title}</h1>
-	</div>
+	<header>
+		<div>
+			<%include "partials/menu.gsp"%>
 
-	<p><em>${new java.text.SimpleDateFormat("dd MMMM yyyy", Locale.ENGLISH).format(content.date)}</em></p>
+			<div class="page-header">
+				<h1>${content.title}</h1>
+			</div>
+		</div>
+	</header>
 
-	<p>${content.body}</p>
+	<article>
+		<p><em>${new java.text.SimpleDateFormat("dd MMMM yyyy", Locale.ENGLISH).format(content.date)}</em></p>
 
-	<hr />
+		<p>${content.body}</p>
 
-<%include "footer.gsp"%>
+		<hr />
+	</article>
+
+<%include "partials/footer.gsp"%>

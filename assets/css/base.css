@@ -50,3 +50,7 @@ body {
 /*code {
   font-size: 80%;
 }*/
+
+.tribe-social a {
+  line-height: 1;
+}

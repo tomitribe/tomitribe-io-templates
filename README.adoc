@@ -1,0 +1,19 @@
+# Using JBake
+
+First install Jbake
+
+
+----
+curl -s "https://get.sdkman.io" | bash
+$ sdk install jbake
+----
+
+Then from inside this `jtier-site-templates` directory:
+
+----
+jbake -b -s
+----
+
+Then open your browser to:
+
+ - http://localhost:8820
