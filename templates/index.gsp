@@ -1,18 +1,21 @@
-<%include "header.gsp"%>
+<%include "partials/header.gsp"%>
 
-	<%include "menu.gsp"%>
+	<header>
+		<div>
+			<div class="tribe-header-image" style="transform: translateY(0px);"></div>
 
-	<div class="page-header">
-		<h1>Blog</h1>
-	</div>
-	<%published_posts.each {post ->%>
-		<a href="${post.uri}"><h1>${post.title}</h1></a>
-		<p>${new java.text.SimpleDateFormat("dd MMMM yyyy", Locale.ENGLISH).format(post.date)}</p>
-		<p>${post.body}</p>
-  	<%}%>
-	
-	<hr />
-	
-	<p>Older posts are available in the <a href="${content.rootpath}${config.archive_file}">archive</a>.</p>
+			<%include "partials/menu.gsp"%>
 
-<%include "footer.gsp"%>
+			<%include "index/index-title.gsp"%>
+		</div>
+	</header>
+
+	<%include "index/index-projects.gsp"%>
+
+	<%include "index/index-highlight.gsp"%>
+
+	<%include "index/index-quotes.gsp"%>
+
+	<%include "partials/page-twitter.gsp"%>
+
+<%include "partials/footer.gsp"%>
