@@ -1,0 +1,1 @@
+<div class="tribe-content-toc">:toc:</div>

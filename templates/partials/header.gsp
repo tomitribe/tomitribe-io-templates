@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="generator" content="JBake">
-
+    <base href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %>/<% }%>">
     <!-- Le styles -->
 	  <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/lato.min.css" rel="stylesheet">
 	  <link href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>css/normalize.min.css" rel="stylesheet">

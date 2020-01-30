@@ -10,7 +10,7 @@
 		</div>
 	</header>
 
-	<article>
+	<article class="template-post">
 		<p><em>${new java.text.SimpleDateFormat("dd MMMM yyyy", Locale.ENGLISH).format(content.date)}</em></p>
 
 		<p>${content.body}</p>

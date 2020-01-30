@@ -10,7 +10,7 @@
 		</div>
 	</header>
 
-	<article>
+	<article class="template-tags">
 		<!--<ul>-->
 			<%def last_month=null;%>
 			<%tag_posts.each {post ->%>

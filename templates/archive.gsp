@@ -10,7 +10,7 @@
 		</div>
 	</header>
 
-	<article>
+	<article class="template-archive">
 		<!--<ul>-->
 			<%def last_month=null;%>
 			<%published_posts.each {post ->%>
