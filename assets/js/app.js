@@ -21,3 +21,10 @@ const tribeHeaderImage = document.querySelector('.tribe-header-image');
 if (tribeHeaderImage) {
     window.addEventListener('scroll', () => tribeHeaderImage.style.transform = 'translateY(' + (pageYOffset / 3) + 'px)');
 }
+const toc = document.querySelector('#toc.toc');
+if (toc) {
+    toc.querySelectorAll('a').forEach(el => el.href = el.href.replace('#', location.pathname.substring(1) + '#'));
+    const tocAside = document.querySelector('.tribe-content-toc');
+    tocAside.innerHTML = toc.innerHTML;
+    toc.parentElement.removeChild(toc);
+}

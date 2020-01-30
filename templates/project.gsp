@@ -6,7 +6,7 @@
 		<div class="tribe-project-name">
 			<div><img src="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>images/projects/crest.png"></div>
 			<h1>${content.title}</h1>
-			<p>Provide administrators with an interactive Java EE shell environment that can be accessed via SSH.</p>
+			<p>${content.description}</p>
 		</div>
 	</header>
 
